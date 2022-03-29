@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/menu1"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu"
+        android:title="Device">
+        <menu>
+            <item
+                android:id="@+id/back"
+                android:title="Back"
+                android:icon="@drawable/ic_back"
+                app:showAsAction="always"/>
+
+            <item
+                android:id="@+id/menuBrand1"
+                android:title="Android"
+                android:icon="@drawable/android_logo"
+                app:showAsAction="always"/>
+
+
+
+            <item
+                android:id="@+id/menuBrand2"
+                android:title="Apple"
+                android:icon="@drawable/apple_logo"
+                app:showAsAction="always" />
+
+
+
+            <item
+                android:id="@+id/menuBrand3"
+                android:title="Huawei"
+                android:icon="@drawable/huawei_logo"
+                app:showAsAction="always"/>
+
+        </menu>
+    </item>
+
+</menu>
