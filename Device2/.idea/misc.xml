@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/yusuf/Desktop/Device2/app/src/main/res/layout/activity_apple_device.xml" value="0.1" />
+        <entry key="..\:/Users/yusuf/Desktop/Device2/app/src/main/res/layout/activity_details.xml" value="0.1" />
+        <entry key="..\:/Users/yusuf/Desktop/Device2/app/src/main/res/layout/activity_huawei_device.xml" value="0.1574074074074074" />
+        <entry key="..\:/Users/yusuf/Desktop/Device2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/android studio/Device/app/src/main/res/drawable/ic_back.xml" value="0.2555" />
         <entry key="..\:/android studio/Device/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2555" />
         <entry key="..\:/android studio/Device/app/src/main/res/drawable/ic_iphone.xml" value="0.148" />
