@@ -118,13 +118,6 @@
 
                     </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/wishlistImg"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_marginLeft="85dp"
-                        app:srcCompat="@drawable/heart_emt" />
-
                 </LinearLayout>
 
             </LinearLayout>

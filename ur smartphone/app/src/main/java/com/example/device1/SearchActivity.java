@@ -249,12 +249,12 @@ public class SearchActivity extends AppCompatActivity {
 
     public void huaweiFilter(View view)
     {
-//        filterList("huawei");
+        filterList("huawei");
     }
 
     public void appleFilter(View view)
     {
-//        filterList("apple");
+        filterList("apple");
     }
 
 }
