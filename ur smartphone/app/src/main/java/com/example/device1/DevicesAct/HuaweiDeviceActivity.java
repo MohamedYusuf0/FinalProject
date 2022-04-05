@@ -3,15 +3,20 @@ package com.example.device1.DevicesAct;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.device1.DetailsActivity;
 import com.example.device1.Device;
 import com.example.device1.DeviceAdapter;
 import com.example.device1.R;
+import com.example.device1.SearchActivity;
 
 import java.util.ArrayList;
 
@@ -59,6 +64,18 @@ public class HuaweiDeviceActivity extends AppCompatActivity {
         DeviceAdapter adapter = new DeviceAdapter(this , 0 , Devices);
         ListView huaweiListView = findViewById(R.id.huaweiListView);
         huaweiListView.setAdapter(adapter);
+
+        huaweiListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Device currentDevice = Devices.get(i);
+                Intent intent = new Intent(HuaweiDeviceActivity.this , DetailsActivity.class);
+                intent.putExtra("Devices" , currentDevice);
+
+                startActivity(intent);
+            }
+        });
 
     }
 
