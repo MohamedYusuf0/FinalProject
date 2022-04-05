@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFD9E2"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#89909F"
+        android:elevation="10dp"
+        android:paddingLeft="20dp"
+        app:iconifiedByDefault="false"
+        app:queryHint="Device Name">
+
+    </SearchView>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/searchView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#89909F"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="145dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="Categories:"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/all"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#000000"
+                    android:elevation="3dp"
+                    android:onClick="allFilters"
+                    android:text="all"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/samsung"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#000000"
+                    android:elevation="3dp"
+                    android:onClick="samsungFilter"
+                    android:text="samsung"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/huawei"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#000000"
+                    android:elevation="3dp"
+                    android:onClick="huaweiFilter"
+                    android:text="huawei"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/apple"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#000000"
+                    android:elevation="3dp"
+                    android:onClick="appleFilter"
+                    android:text="apple"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/searchlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="70dp">
+
+    </ListView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/barView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/roundcorner"
+        app:itemIconTint="@color/color_for_item"
+        app:itemRippleColor="#C6C6C6"
+        app:itemTextColor="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home1"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/search1"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/search_white" />
+
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
+
